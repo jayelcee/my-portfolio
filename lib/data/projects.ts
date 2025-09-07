@@ -1,0 +1,108 @@
+export const projects = [
+  {
+    title: "InternHQ",
+    description:
+      "A full-stack internship management system that streamlines the entire lifecycle—from onboarding to reporting. It features secure user authentication, role-based access, real-time time tracking with overtime, a centralized admin dashboard, automated reports, and a responsive interface for all devices.",
+    tech: ["React", "Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS", "v0"],
+    github: "https://github.com/jayelcee/InternHQ",
+    demo: "https://intern-hq.vercel.app",
+    status: "Deployed",
+    year: "2024",
+    category: "Full-Stack Web Application",
+    featured: true,
+    stats: { users: "50+", uptime: "99.9%" },
+  },
+  {
+    title: "CS Expo 2024 Website",
+    description:
+      "A responsive web platform for CS Expo 2024, built to showcase student thesis projects, event schedules, speaker profiles, and award highlights. Features include dynamic content rendering, filterable views, and seamless user experience across devices.",
+    tech: ["React", "Node.js", "Typescript", "Tailwind CSS"],
+    github: "https://github.com/csexpo2024/cs-expo-2024",
+    demo: "https://cs-expo-2024.vercel.app",
+    status: "Deployed",
+    year: "Nov 2024",
+    category: "Frontend Web Application",
+    featured: true,
+    stats: { visitors: "500+", events: "20+" },
+  },
+  {
+    title: "ByteZen Careers Website",
+    description:
+      "A responsive web app for managing job applications. It allows users to browse listings, apply for a job, and track application status, while admins can oversee applicants and update hiring progress through an integrated dashboard.",
+    tech: ["Python", "Flask", "SQLite", "Bootstrap", "HTML5", "CSS3"],
+    github: "https://github.com/jayelcee/bytezen-careers-website",
+    demo: "https://www.youtube.com/watch?v=hpZ50bOPWpg",
+    status: "Completed",
+    year: "Feb 2024",
+    category: "Full-Stack Web Application",
+    featured: false,
+    stats: { features: "15+", performance: "Fast" },
+  },
+  {
+    title: "Outer Space Adventure",
+    description:
+      "A 3D graphics project that renders an interactive solar scene with animated celestial bodies and a stylized Among Us character. Built using OpenGL, it features real-time object transformations, full-screen rendering, and user-controlled motion for immersive visualization.",
+    tech: ["C++", "OpenGL", "GLUT", "3D Modeling", "Animation"],
+    github: "https://github.com/jayelcee/Computer-Graphics-Projects",
+    demo: "https://www.youtube.com/watch?v=HNalhw2L8Jk",
+    status: "Completed",
+    year: "Nov 2023",
+    category: "Game Application",
+    featured: false,
+    stats: { levels: "15+", users: "200+" },
+  },
+  {
+    title: "Advanced Weather Recording System",
+    description:
+      "A desktop application that delivers real-time and historical weather data using WeatherAPI. It features 7-day forecasts, date-based weather retrieval, local data storage via SQLite, and a user-friendly interface with alert notifications for severe conditions.",
+    tech: ["Python", "Tkinter", "SQLite", "Weather API"],
+    github: "https://github.com/jayelcee/Weather_System_with_GUI",
+    demo: "https://www.youtube.com/watch?v=UABt6QdWHMY",
+    status: "Completed",
+    year: "Sep 2023",
+    category: "Weather Application",
+    featured: false,
+    stats: { accuracy: "98%", dataPoints: "10K+" },
+  },
+  {
+    title: "Bitwise Calculator Android App",
+    description:
+      "A beginner-friendly mobile app for performing real-time bitwise operations on integers. Supports essential logic functions with decimal input/output, instant feedback, and built-in input validation—all within a clean, minimal interface.",
+    tech: ["Java", "Android SDK", "Android Studio", "OOP", "XML"],
+    github: "https://github.com/jayelcee/Bitwise-Calculator",
+    demo: "https://www.youtube.com/watch?v=pVxmj-a7hWo",
+    status: "Completed",
+    year: "Oct 2023",
+    category: "Mobile Application",
+    featured: false,
+    stats: { accuracy: "98%", dataPoints: "10K+" },
+  },
+  {
+    title: "Expense Tracker Android App",
+    description:
+      "A mobile application for logging daily expenses, viewing spending history, and managing personal finances offline. It features local data storage, input validation, and a clean, user-friendly interface designed for efficient expense tracking.",
+    tech: ["Java", "Android Studio", "SQLite", "XML"],
+    github: "https://github.com/jayelcee/Expense-Tracker",
+    demo: "https://www.youtube.com/watch?v=8ZUOCX74NBk",
+    status: "Completed",
+    year: "Oct 2023",
+    category: "Mobile Application",
+    featured: false,
+    stats: { categories: "10+", charts: "5 types" },
+  },
+  {
+    title: "Star Platinum Movie Rental System",
+    description:
+      "A command-line application for managing a movie rental store. It supports movie cataloging, rentals, returns, and customer records using C++ and vector-based data structures. Designed with modular programming and CRUD operations for efficient store management.",
+    tech: ["C++", "File I/O", "Data Structures", "CLI"],
+    github: "https://github.com/jayelcee/JMachineProblem",
+    demo: "https://www.youtube.com/watch?v=jNYuP4BR2Hs",
+    status: "Completed",
+    year: "Jul 2022",
+    category: "Desktop Application",
+    featured: false,
+    stats: { movies: "100+", features: "12+" },
+  },
+];
+
+export type Project = typeof projects[0];
