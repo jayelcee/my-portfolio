@@ -28,7 +28,7 @@ export const personalInfo = {
       "CSS",
     ],
   },
-  featuredTech: ["React", "Next.js", "TypeScript", "MERN Stack"],
+  featuredTech: ["React", "Next.js", "MERN"],
   contact: {
     email: "jasminec.dev@gmail.com",
     linkedin: "jasmine-camasura-t25",
