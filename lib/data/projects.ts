@@ -7,7 +7,7 @@ export const projects = [
     github: "https://github.com/jayelcee/InternHQ",
     demo: "https://intern-hq.vercel.app",
     status: "Deployed",
-    year: "2024",
+    year: "Jul 2025",
     category: "Full-Stack Web Application",
     featured: true,
     stats: { users: "50+", uptime: "99.9%" },
