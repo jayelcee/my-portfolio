@@ -132,7 +132,7 @@ export default function Portfolio() {
                       </div>
 
                       <div className="flex gap-4">
-                        <Button size="sm" variant="primary" asChild>
+                        {/* <Button size="sm" variant="primary" asChild>
                           <a
                             href={project.github}
                             target="_blank"
@@ -142,7 +142,7 @@ export default function Portfolio() {
                             <Github className="w-4 h-4" />
                             View Code
                           </a>
-                        </Button>
+                        </Button> */}
                         <Button size="sm" variant="primary" asChild>
                           <a
                             href={project.demo}
