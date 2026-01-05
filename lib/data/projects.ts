@@ -1,11 +1,24 @@
 export const projects = [
   {
+    title: "Point of Sale System",
+    description:
+      "A full-featured POS system built for grocery stores with capabilities for broader retail customization. Features include real-time inventory management with stock alerts, barcode/SKU product search, transaction processing with VAT calculation, role-based access (Manager/Cashier), comprehensive analytics dashboard, and low-stock notifications. Designed for efficient checkout operations and business insights.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "JavaScript", "Tailwind CSS"],
+    github: "https://github.com/kaizentech25/pos-system",
+    demo: "https://kaizentech-pos-system.onrender.com",
+    status: "Deployed",
+    year: "Dec 2025",
+    category: "Full-Stack Web Application",
+    featured: true,
+    stats: { products: "100+", realtime: "Stock tracking" },
+  },
+  {
     title: "InternHQ",
     description:
       "A full-stack internship management system that streamlines the entire lifecycle—from onboarding to reporting. It features secure user authentication, role-based access, real-time time tracking with overtime, a centralized admin dashboard, automated reports, and a responsive interface for all devices.",
     tech: ["React", "Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS", "v0"],
-    github: "https://github.com/jayelcee/InternHQ",
-    demo: "https://intern-hq.vercel.app",
+    github: "https://github.com/kaizentech25/intern-dtr",
+    demo: "https://kaizentech-intern-dtr-system.onrender.com/",
     status: "Deployed",
     year: "Jul 2025",
     category: "Full-Stack Web Application",
@@ -31,11 +44,11 @@ export const projects = [
       "A responsive web app for managing job applications. It allows users to browse listings, apply for a job, and track application status, while admins can oversee applicants and update hiring progress through an integrated dashboard.",
     tech: ["Python", "Flask", "SQLite", "Bootstrap", "HTML5", "CSS3"],
     github: "https://github.com/jayelcee/bytezen-careers-website",
-    demo: "https://www.youtube.com/watch?v=hpZ50bOPWpg",
+    demo: "https://bytezen-careers-website-6nb4.onrender.com/",
     status: "Completed",
     year: "Feb 2024",
     category: "Full-Stack Web Application",
-    featured: false,
+    featured: true,
     stats: { features: "15+", performance: "Fast" },
   },
   {
