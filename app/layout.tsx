@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSans.variable} antialiased dark`}>
       <head>
-        <link rel="icon/jpg" href="/app-icon.jpg" />
+        <link rel="icon" type="image/jpeg" href="/app-icon.jpg" />
       </head>
       <body className="font-sans">{children}</body>
     </html>
