@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Linkedin, Github } from "lucide-react";
 import { personalInfo } from "@/lib/data/personal";
+import { motion } from "framer-motion";
+import { staggerContainerVariants, staggerItemVariants, cardHoverVariants } from "@/lib/animations/variants";
 
 export default function Contact() {
   const contactMethods = [
@@ -50,56 +52,93 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
-      <div className="max-w-4xl mx-auto text-center animate-fade-in">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8 instagram-gradient-text">Let&apos;s Work Together</h2>
-        <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
+      <motion.div
+        className="max-w-4xl mx-auto text-center w-full"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={staggerContainerVariants}
+      >
+        <motion.h2 variants={staggerItemVariants} className="text-3xl md:text-4xl font-bold mb-8 instagram-gradient-text">
+          Let&apos;s Work Together
+        </motion.h2>
+        <motion.p variants={staggerItemVariants} className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
           I&apos;m actively seeking opportunities to contribute to innovative software engineering projects and grow as a
           full-stack developer. Let&apos;s connect and discuss how we can build something amazing together.
-        </p>
+        </motion.p>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        <motion.div
+          className="grid md:grid-cols-3 gap-6 mb-12"
+          variants={staggerContainerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+        >
           {contactMethods.map(({ icon: Icon, title, value, href }, index) => (
-            <Card key={index} className="border-border bg-background hover-lift group">
-              <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 mx-auto mb-4 rounded-full instagram-gradient flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Icon className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="font-semibold text-foreground mb-2">{title}</h3>
-                <a
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+            <motion.div key={index} custom={index} variants={staggerItemVariants}>
+              <Card className="border-border bg-background group h-full cursor-pointer">
+                <motion.div
+                  variants={cardHoverVariants}
+                  initial="rest"
+                  whileHover="hover"
+                  className="h-full"
                 >
-                  {value}
-                </a>
-              </CardContent>
-            </Card>
+                  <CardContent className="p-6 text-center">
+                    <motion.div
+                      className="w-12 h-12 mx-auto mb-4 rounded-full instagram-gradient flex items-center justify-center"
+                      whileHover={{ scale: 1.15, rotate: 10 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <Icon className="w-6 h-6 text-white" />
+                    </motion.div>
+                    <h3 className="font-semibold text-foreground mb-2">{title}</h3>
+                    <motion.a
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                      whileHover={{ scale: 1.05 }}
+                    >
+                      {value}
+                    </motion.a>
+                  </CardContent>
+                </motion.div>
+              </Card>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col sm:flex-row gap-6 justify-center">
+        <motion.div
+          className="flex flex-col sm:flex-row gap-6 justify-center"
+          variants={staggerContainerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+        >
           {actionButtons.map(({ href, icon: Icon, label, external }, index) => (
-            <Button
-              key={index}
-              size="lg"
-              variant="primary"
-              asChild
-            >
-              <a
-                href={href}
-                target={external ? "_blank" : undefined}
-                rel={external ? "noopener noreferrer" : undefined}
+            <motion.div key={index} custom={index} variants={staggerItemVariants}>
+              <Button
+                size="lg"
+                variant="primary"
+                asChild
               >
-                <div className="flex items-center gap-2">
-                  <Icon className="w-4 h-4" />
-                  {label}
-                </div>
-              </a>
-            </Button>
+                <motion.a
+                  href={href}
+                  target={external ? "_blank" : undefined}
+                  rel={external ? "noopener noreferrer" : undefined}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <div className="flex items-center gap-2">
+                    <Icon className="w-4 h-4" />
+                    {label}
+                  </div>
+                </motion.a>
+              </Button>
+            </motion.div>
           ))}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
