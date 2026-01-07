@@ -45,7 +45,7 @@ export const projects = [
     tech: ["Python", "Flask", "SQLite", "Bootstrap", "HTML5", "CSS3"],
     github: "https://github.com/jayelcee/bytezen-careers-website",
     demo: "https://bytezen-careers-website-6nb4.onrender.com/",
-    status: "Completed",
+    status: "Deployed",
     year: "Feb 2024",
     category: "Full-Stack Web Application",
     featured: true,
