@@ -29,7 +29,7 @@ export default function Navigation({ activeSection, scrollY, onSectionClick }: N
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16" data-nav-bar>
           <motion.div
             className="font-bold text-xl instagram-gradient-text"
             initial={{ opacity: 0, x: -20 }}
@@ -72,6 +72,10 @@ export default function Navigation({ activeSection, scrollY, onSectionClick }: N
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             whileTap={{ scale: 0.95 }}
+            aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
+            type="button"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </motion.button>
@@ -79,23 +83,26 @@ export default function Navigation({ activeSection, scrollY, onSectionClick }: N
 
         {/* Mobile Navigation */}
         <motion.div
+          id="mobile-menu"
           variants={mobileMenuVariants}
           initial="hidden"
           animate={isMenuOpen ? "visible" : "hidden"}
           className="md:hidden border-t border-border bg-background/95 backdrop-blur-md overflow-hidden"
         >
           {navigationItems.map((item) => (
-            <motion.button
+            <motion.a
               key={item.name}
-              onClick={() => {
+              href={`#${item.id}`}
+              onClick={(event) => {
+                event.preventDefault();
                 onSectionClick(item.id);
                 setIsMenuOpen(false);
               }}
               variants={mobileMenuItemVariants}
-              className="block w-full text-left py-2 px-4 text-muted-foreground hover:text-foreground transition-colors"
+              className="block w-full text-left py-3 px-4 text-lg text-muted-foreground hover:text-foreground transition-colors"
             >
               {item.name}
-            </motion.button>
+            </motion.a>
           ))}
         </motion.div>
       </div>

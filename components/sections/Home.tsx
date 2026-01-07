@@ -28,7 +28,7 @@ export default function Home({ onSectionClick }: HomeProps) {
             viewport={{ once: true, amount: 0.5 }}
             variants={staggerContainerVariants}
           >
-            <motion.div className="mb-8" variants={staggerItemVariants}>
+            <motion.div className="mb-8" variants={staggerItemVariants} data-scroll-anchor>
               <Badge className="instagram-gradient text-white px-4 py-2 text-sm font-medium">
                 <Sparkles className="w-4 h-4 mr-2" />
                 Ready to Innovate

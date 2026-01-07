@@ -118,9 +118,19 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden scroll-smooth;
     /* Added GitHub-style default dark mode */
     color-scheme: dark;
+  }
+
+  section[id] {
+    scroll-margin-top: 4.5rem;
+  }
+
+  @media (min-width: 768px) {
+    section[id] {
+      scroll-margin-top: 5.25rem;
+    }
   }
 
   /* Added GitHub-style scrollbar for dark theme */

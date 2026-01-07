@@ -11,6 +11,7 @@ export default function Experience() {
     <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30">
       <div className="max-w-6xl mx-auto">
         <motion.h2
+          data-scroll-anchor
           className="text-4xl md:text-5xl font-bold text-center mb-16 instagram-gradient-text"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -39,7 +40,7 @@ export default function Experience() {
                   whileHover="hover"
                 >
                   <CardContent className="p-8">
-                    <div className="flex items-start gap-6 mb-6">
+                    <div className="flex flex-col sm:flex-row items-start gap-6 mb-6">
                       {exp.logo && (
                         <motion.div
                           className="w-20 h-20 rounded-lg bg-white flex items-center justify-center flex-shrink-0"

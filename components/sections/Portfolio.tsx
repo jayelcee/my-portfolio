@@ -55,7 +55,7 @@ export default function Portfolio() {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="grid grid-cols-3 bg-secondary/20 backdrop-blur-sm rounded-2xl p-2 border border-border/50 max-w-2xl w-full">
+          <div className="grid grid-cols-3 gap-0 bg-secondary/20 backdrop-blur-sm rounded-2xl p-2 border border-border/50 max-w-2xl w-full">
             {tabs.map(({ id, label, icon: Icon }) => (
               <motion.button
                 key={id}
