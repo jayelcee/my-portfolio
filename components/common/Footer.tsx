@@ -29,7 +29,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="text-muted-foreground text-sm">
-          © 2025 {personalInfo.name}. Built with Next.js, TypeScript, and Tailwind CSS.
+          © 2025 {personalInfo.name}. All rights reserved.
         </p>
         <p className="text-xs text-muted-foreground mt-2">{personalInfo.status}</p>
       </div>
