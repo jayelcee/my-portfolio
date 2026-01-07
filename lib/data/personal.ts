@@ -9,7 +9,7 @@ export const personalInfo = {
   linkedin: "https://www.linkedin.com/in/jasmine-camasura-t25/",
   image: "/dev-headshot.jpg",
   location: "Philippines",
-  status: "Open to frontend and full-stack development opportunities worldwide.",
+  status: "Open to frontend, backend, and full-stack development opportunities worldwide.",
   education: {
     institution: "FEU Institute of Technology",
     degree: "BS Computer Science - Software Engineering",
