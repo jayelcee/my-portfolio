@@ -36,13 +36,13 @@ export default function Home({ onSectionClick }: HomeProps) {
             </motion.div>
 
             <motion.div variants={staggerItemVariants}>
-              <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-4 leading-tight">Full-Stack</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 leading-tight">Frontend | Full Stack</h1>
             </motion.div>
             <motion.div variants={staggerItemVariants}>
-              <h1 className="text-5xl md:text-7xl font-bold instagram-gradient-text mb-6 leading-tight">Web Developer</h1>
+              <h1 className="text-4xl md:text-5xl font-bold instagram-gradient-text mb-6 leading-tight"> Web Developer</h1>
             </motion.div>
 
-            <motion.p variants={staggerItemVariants} className="text-lg text-muted-foreground mb-4">
+            <motion.p variants={staggerItemVariants} className="text-lg font-medium text-foreground mb-4">
               {personalInfo.subtitle}
             </motion.p>
 
@@ -79,12 +79,13 @@ export default function Home({ onSectionClick }: HomeProps) {
               <motion.div variants={staggerItemVariants}>
                 <Button
                   variant="primary"
+                  size="lg"
                   onClick={() => onSectionClick("portfolio", "projects")}
                   className="flex items-center gap-2 instagram-gradient-hover"
                   asChild
                 >
                   <motion.button variants={buttonVariants} whileHover="hover" whileTap="tap">
-                    <span className="text-sm font-medium">Portfolio</span>
+                    <span className="text-sm font-medium">View My Work</span>
                     <ExternalLink className="w-5 h-5" />
                   </motion.button>
                 </Button>
@@ -92,12 +93,13 @@ export default function Home({ onSectionClick }: HomeProps) {
               <motion.div variants={staggerItemVariants}>
                 <Button
                   variant="primary"
+                  size="lg"
                   onClick={() => onSectionClick("contact")}
                   className="flex items-center gap-2 instagram-gradient-hover"
                   asChild
                 >
                   <motion.button variants={buttonVariants} whileHover="hover" whileTap="tap">
-                    <span className="text-sm font-medium">Contact</span>
+                    <span className="text-sm font-medium">Contact Me</span>
                     <Mail className="w-5 h-5" />
                   </motion.button>
                 </Button>

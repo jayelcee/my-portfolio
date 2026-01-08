@@ -1,17 +1,47 @@
-export const techStack = [
-  { name: "React", icon: "/react-icon.png" },
-  { name: "Next.js", icon: "/next-icon.png" },
-  { name: "Node.js", icon: "/node-icon.png" },
-  { name: "TypeScript", icon: "/typescript-icon.png" },
-  { name: "JavaScript", icon: "/javascript-icon.png" },
-  { name: "Python", icon: "/python-icon.png" },
-  { name: "Ruby on Rails", icon: "/rails-icon.png" },
-  { name: "PostgreSQL", icon: "/postgresql-icon.png" },
-  { name: "Tailwind CSS", icon: "/tailwind-icon.png" },
-  { name: "Git", icon: "/git-icon.png" },
-  { name: "GitHub", icon: "/github-icon.png" },
-  { name: "Docker", icon: "/docker-icon.png" },
+export const techStackCategories = [
+  {
+    category: "Frameworks",
+    skills: [
+      { name: "React", icon: "/react-icon.png" },
+      { name: "Next.js", icon: "/next-icon.png" },
+      { name: "Express", icon: "/express-icon.png" },
+      { name: "Flask", icon: "/flask-icon.png" },
+      { name: "Ruby on Rails", icon: "/rails-icon.png" },
+    ]
+  },
+  {
+    category: "Frontend",
+    skills: [
+      { name: "JavaScript", icon: "/javascript-icon.png" },
+      { name: "TypeScript", icon: "/typescript-icon.png" },
+      { name: "Tailwind CSS", icon: "/tailwind-icon.png" },
+      { name: "HTML5", icon: "/html5-icon.png" },
+    ]
+  },
+  {
+    category: "Backend",
+    skills: [
+      { name: "Node.js", icon: "/node-icon.png" },
+      { name: "Python", icon: "/python-icon.png" },
+      { name: "MongoDB", icon: "/mongodb-icon.png" },
+      { name: "PostgreSQL", icon: "/postgresql-icon.png" },
+      { name: "SQLite", icon: "/sqlite-icon.png" },
+    ]
+  },
+  {
+    category: "Developer Tools",
+    skills: [
+      { name: "Git", icon: "/git-icon.png" },
+      { name: "GitHub", icon: "/github-icon.png" },
+      { name: "GitLab", icon: "/gitlab-icon.png" },
+      { name: "VS Code", icon: "/vscode-icon.png" },
+      { name: "Docker", icon: "/docker-icon.png" },
+      { name: "Jira", icon: "/jira-icon.png" },
+    ]
+  },
 ];
+
+export const techStack = techStackCategories.flatMap(cat => cat.skills);
 
 function calculateYearsOfExperience(): string {
   const startDate = new Date('2021-08-30');
@@ -41,7 +71,7 @@ export function getStats(projects: Project[], certificates: Certificate[]): Stat
     {
       label: "YEARS OF EXPERIENCE",
       value: calculateYearsOfExperience(),
-      description: "Continuous learning journey",
+      description: "Building projects since 2021",
     },
   ];
 }

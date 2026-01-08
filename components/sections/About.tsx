@@ -56,10 +56,17 @@ export default function About({ onSectionClick, onStatClick }: AboutProps) {
               <span className="instagram-gradient-text">{personalInfo.name}</span>
             </h3>
 
+            <p className="text-muted-foreground mb-4 leading-relaxed">
+              I&apos;m a Computer Science graduate from FEU Institute of Technology, where I earned my degree with{" "}
+              <span className="font-semibold text-foreground">Summa Cum Laude honors</span> and graduated as{" "}
+              <span className="font-semibold text-foreground">Class Valedictorian (2025)</span>. These achievements reflect my strong work ethic, 
+              consistency, and ability to learn quickly under pressure.
+            </p>
+
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              A Computer Science graduate focusing on full-stack web development. I build clean, responsive interfaces and robust
-              backend systems that get the job done. My focus is on delivering reliable, scalable solutions that meet business needs
-              and user expectations. Every project I take on is approached with efficiency, clarity, and results in mind.
+              I specialize in building modern web applications using <span className="font-semibold text-foreground">React, Next.js, and the MERN stack</span>. 
+              I gained hands-on experience during my internship working with Ruby on Rails and contributed to enterprise-grade systems. 
+              While I&apos;m early in my career, I&apos;m highly motivated, technically capable, and ready to grow with a team that values discipline and continuous improvement.
             </p>
 
             <motion.div
@@ -174,7 +181,7 @@ export default function About({ onSectionClick, onStatClick }: AboutProps) {
                       </span>
                       <span className="flex items-center gap-1">
                         <Award className="w-4 h-4" />
-                        Grade: {personalInfo.education.grade}
+                        {personalInfo.education.grade}
                       </span>
                     </div>
                     <div className="mb-4">

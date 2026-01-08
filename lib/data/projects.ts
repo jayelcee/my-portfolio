@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Point of Sale System",
     description:
-      "A full-featured POS system built for grocery stores with capabilities for broader retail customization. Features include real-time inventory management with stock alerts, barcode/SKU product search, transaction processing with VAT calculation, role-based access (Manager/Cashier), comprehensive analytics dashboard, and low-stock notifications. Designed for efficient checkout operations and business insights.",
+      "Full-stack POS system with role-based authentication, checkout terminal supporting multiple payment methods, inventory management with alerts, and dual analytics dashboards for platform and company-level insights. Features transaction history, receipt viewing, and dark mode support.",
     tech: ["React", "Node.js", "Express", "MongoDB", "JavaScript", "Tailwind CSS"],
     github: "https://github.com/kaizentech25/pos-system",
     demo: "https://kaizentech-pos-system.onrender.com",
@@ -15,7 +15,7 @@ export const projects = [
   {
     title: "InternHQ",
     description:
-      "A full-stack internship management system that streamlines the entire lifecycle—from onboarding to reporting. It features secure user authentication, role-based access, real-time time tracking with overtime, a centralized admin dashboard, automated reports, and a responsive interface for all devices.",
+      "Time tracking platform for interns with clock-in/out, multi-tier overtime management, edit log requests, and completion workflow that auto-generates DTR and certificates. Includes separate dashboards for interns and admins with PostgreSQL database.",
     tech: ["React", "Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS", "v0"],
     github: "https://github.com/kaizentech25/intern-dtr",
     demo: "https://kaizentech-intern-dtr-system.onrender.com/",
@@ -28,7 +28,7 @@ export const projects = [
   {
     title: "CS Expo 2024 Website",
     description:
-      "A responsive web platform for CS Expo 2024, built to showcase student thesis projects, event schedules, speaker profiles, and award highlights. Features include dynamic content rendering, filterable views, and seamless user experience across devices.",
+      "Event website showcasing 22 thesis projects with category filtering, Hall of Fame section with awards, individual project pages with research details and videos, event schedules, and team profiles. Built collaboratively with React and TypeScript.",
     tech: ["React", "Node.js", "Typescript", "Tailwind CSS"],
     github: "https://github.com/csexpo2024/cs-expo-2024",
     demo: "https://cs-expo-2024.vercel.app",
@@ -41,7 +41,7 @@ export const projects = [
   {
     title: "ByteZen Careers Website",
     description:
-      "A responsive web app for managing job applications. It allows users to browse listings, apply for a job, and track application status, while admins can oversee applicants and update hiring progress through an integrated dashboard.",
+      "Job application platform with dual portals for applicants and admins. Features job browsing, application submission with resume upload, status tracking, and automated credential generation. Built with Flask, SQLite, and Bootstrap.",
     tech: ["Python", "Flask", "SQLite", "Bootstrap", "HTML5", "CSS3"],
     github: "https://github.com/jayelcee/bytezen-careers-website",
     demo: "https://bytezen-careers-website-6nb4.onrender.com/",

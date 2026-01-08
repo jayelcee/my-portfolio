@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import { projects } from "@/lib/data/projects";
 import { certificates } from "@/lib/data/certificates";
-import { techStack } from "@/lib/data/techstack";
+import { techStackCategories } from "@/lib/data/techstack";
 import { motion, AnimatePresence } from "framer-motion";
 import { staggerContainerVariants, staggerItemVariants, tabContentVariants, cardVariants, cardHoverVariants } from "@/lib/animations/variants";
 
@@ -84,42 +84,58 @@ export default function Portfolio() {
               initial="hidden"
               animate="visible"
               exit="exit"
+              className="space-y-12"
             >
-              <motion.div
-                className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6"
-                variants={staggerContainerVariants}
-                initial="hidden"
-                animate="visible"
-              >
-                {techStack.map((skill, index) => (
-                  <motion.div key={index} custom={index} variants={cardVariants}>
-                    <Card
-                      className="border-border/50 bg-card/50 backdrop-blur-sm text-center group h-full cursor-pointer"
-                    >
-                      <motion.div
-                        className="h-full"
-                        whileHover={{ y: -8, boxShadow: "0px 10px 30px rgba(0,0,0,0.2)" }}
-                        transition={{ duration: 0.3 }}
-                      >
-                        <CardContent className="p-6">
+              {techStackCategories.map((category, categoryIndex) => (
+                <motion.div
+                  key={categoryIndex}
+                  variants={staggerContainerVariants}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  <motion.h3
+                    variants={staggerItemVariants}
+                    className="text-2xl font-bold mb-6 instagram-gradient-text"
+                  >
+                    {category.category}
+                  </motion.h3>
+                  <motion.div
+                    className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6"
+                    variants={staggerContainerVariants}
+                  >
+                    {category.skills.map((skill, index) => (
+                      <motion.div key={index} custom={index} variants={cardVariants}>
+                        <Card
+                          className="border-border/50 bg-card/50 backdrop-blur-sm text-center group h-full cursor-pointer"
+                        >
                           <motion.div
-                            className="text-4xl mb-3"
-                            whileHover={{ scale: 1.2, rotate: 10 }}
+                            className="h-full"
+                            whileHover={{ y: -8, boxShadow: '0px 10px 30px rgba(0,0,0,0.2)' }}
                             transition={{ duration: 0.3 }}
                           >
-                            {typeof skill.icon === "string" && skill.icon.endsWith(".png") ? (
-                              <Image src={skill.icon} alt={skill.name} width={40} height={40} className="h-10 mx-auto mb-3" />
-                            ) : (
-                              <span className="text-4xl mb-3">{skill.icon}</span>
-                            )}
+                            <CardContent className="p-3 md:p-4 lg:p-6">
+                              <motion.div
+                                className="mb-2 md:mb-3"
+                                whileHover={{ scale: 1.1, rotate: 8 }}
+                                transition={{ duration: 0.3 }}
+                              >
+                                {typeof skill.icon === 'string' && skill.icon.endsWith('.png') ? (
+                                  <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 flex items-center justify-center mx-auto">
+                                    <Image src={skill.icon} alt={skill.name} width={48} height={48} className="w-full h-full object-contain" />
+                                  </div>
+                                ) : (
+                                  <span className="text-3xl md:text-4xl mb-2 md:mb-3">{skill.icon}</span>
+                                )}
+                              </motion.div>
+                              <h3 className="font-semibold text-foreground text-xs md:text-sm">{skill.name}</h3>
+                            </CardContent>
                           </motion.div>
-                          <h3 className="font-semibold text-foreground text-sm">{skill.name}</h3>
-                        </CardContent>
+                        </Card>
                       </motion.div>
-                    </Card>
+                    ))}
                   </motion.div>
-                ))}
-              </motion.div>
+                </motion.div>
+              ))}
             </motion.div>
           )}
 
@@ -177,7 +193,7 @@ export default function Portfolio() {
                             </div>
                           </CardHeader>
                           <CardContent className="flex-grow">
-                            <div className="mb-6">
+                            <div className="mt-4 mb-6">
                               <h4 className="font-semibold mb-3">Technologies Used</h4>
                               <motion.div
                                 className="flex flex-wrap gap-2"

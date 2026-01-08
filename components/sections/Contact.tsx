@@ -62,9 +62,12 @@ export default function Contact() {
         <motion.h2 variants={staggerItemVariants} className="text-3xl md:text-4xl font-bold mb-8 instagram-gradient-text">
           Let&apos;s Work Together
         </motion.h2>
-        <motion.p variants={staggerItemVariants} className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-          I&apos;m actively seeking opportunities to contribute to innovative software engineering projects and grow as a
-          full-stack developer. Let&apos;s connect and discuss how we can build something amazing together.
+        <motion.p variants={staggerItemVariants} className="text-lg text-muted-foreground mb-4 max-w-2xl mx-auto">
+          <span className="font-semibold text-foreground">I&apos;m actively seeking remote Frontend or Full Stack Developer roles.</span>
+        </motion.p>
+        <motion.p variants={staggerItemVariants} className="text-base text-muted-foreground mb-12 max-w-2xl mx-auto">
+          With a strong foundation in React, Next.js, and the MERN stack—plus experience from my Ruby on Rails internship.
+          I&apos;m ready to contribute to a team that values growth, quality code, and continuous learning.
         </motion.p>
 
         <motion.div
