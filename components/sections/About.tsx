@@ -57,16 +57,15 @@ export default function About({ onSectionClick, onStatClick }: AboutProps) {
             </h3>
 
             <p className="text-muted-foreground mb-4 leading-relaxed">
-              I&apos;m a Computer Science graduate from FEU Institute of Technology, where I earned my degree with{" "}
-              <span className="font-semibold text-foreground">Summa Cum Laude honors</span> and graduated as{" "}
-              <span className="font-semibold text-foreground">Class Valedictorian (2025)</span>. These achievements reflect my strong work ethic, 
-              consistency, and ability to learn quickly under pressure.
+              A Computer Science graduate from FEU Institute of Technology, where I earned {" "}
+              <span className="font-semibold text-foreground">Summa Cum Laude</span> honors and graduated top of my batch. 
+              These achievements reflect my strong work ethic, consistency, and ability to learn quickly under pressure.
             </p>
 
             <p className="text-muted-foreground mb-8 leading-relaxed">
               I specialize in building modern web applications using <span className="font-semibold text-foreground">React, Next.js, and the MERN stack</span>. 
-              I gained hands-on experience during my internship working with Ruby on Rails and contributed to enterprise-grade systems. 
-              While I&apos;m early in my career, I&apos;m highly motivated, technically capable, and ready to grow with a team that values discipline and continuous improvement.
+              I gained hands-on experience with Ruby on Rails during my internship, contributing to enterprise-grade systems used in production.
+              Though early in my career, I am highly motivated and technically capable. I&apos;m eager to grow with a team that values discipline and continuous improvement.
             </p>
 
             <motion.div

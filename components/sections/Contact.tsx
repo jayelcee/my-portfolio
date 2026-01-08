@@ -59,7 +59,7 @@ export default function Contact() {
         viewport={{ once: true, amount: 0.5 }}
         variants={staggerContainerVariants}
       >
-        <motion.h2 variants={staggerItemVariants} className="text-3xl md:text-4xl font-bold mb-8 instagram-gradient-text">
+        <motion.h2 variants={staggerItemVariants} className="text-3xl md:text-4xl font-bold mb-8 p-1 instagram-gradient-text">
           Let&apos;s Work Together
         </motion.h2>
         <motion.p variants={staggerItemVariants} className="text-lg text-muted-foreground mb-4 max-w-2xl mx-auto">
