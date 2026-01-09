@@ -8,11 +8,11 @@ import { staggerContainerVariants, staggerItemVariants, cardHoverVariants } from
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30">
+    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           data-scroll-anchor
-          className="text-4xl md:text-5xl font-bold text-center mb-16 instagram-gradient-text"
+          className="text-4xl md:text-5xl font-bold text-center mb-16 p-1 instagram-gradient-text"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
@@ -33,7 +33,7 @@ export default function Experience() {
               custom={index}
               variants={staggerItemVariants}
             >
-              <Card className="border-border bg-background">
+              <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
                 <motion.div
                   variants={cardHoverVariants}
                   initial="rest"

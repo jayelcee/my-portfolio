@@ -55,7 +55,7 @@ export default function Portfolio() {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="grid grid-cols-3 gap-0 bg-secondary/20 backdrop-blur-sm rounded-2xl p-2 border border-border/50 max-w-2xl w-full">
+          <div className="grid grid-cols-3 gap-0 backdrop-blur-sm rounded-2xl pl-1 pr-1 border border-border/50 bg-card/50 max-w-2xl w-full">
             {tabs.map(({ id, label, icon: Icon }) => (
               <motion.button
                 key={id}
@@ -65,7 +65,7 @@ export default function Portfolio() {
                 className={`flex flex-col items-center gap-2 px-6 py-4 rounded-xl transition-all duration-300 ${
                   activeTab === id
                     ? "instagram-gradient text-white shadow-lg transform scale-105"
-                    : "text-muted-foreground hover:text-foreground hover:bg-background/30"
+                    : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 <Icon className="w-6 h-6" />

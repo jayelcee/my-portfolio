@@ -79,7 +79,7 @@ export default function Contact() {
         >
           {contactMethods.map(({ icon: Icon, title, value, href }, index) => (
             <motion.div key={index} custom={index} variants={staggerItemVariants}>
-              <Card className="border-border bg-background group h-full cursor-pointer">
+              <Card className="border-border/50 bg-card/50 backdrop-blur-sm group h-full cursor-pointer">
                 <motion.div
                   variants={cardHoverVariants}
                   initial="rest"
