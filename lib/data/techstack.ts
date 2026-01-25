@@ -44,7 +44,7 @@ export const techStackCategories = [
 export const techStack = techStackCategories.flatMap(cat => cat.skills);
 
 function calculateYearsOfExperience(): string {
-  const startDate = new Date('2021-08-30');
+  const startDate = new Date('2025-01-08');
   const currentDate = new Date();
   
   const diffInMilliseconds = currentDate.getTime() - startDate.getTime();
@@ -71,7 +71,7 @@ export function getStats(projects: Project[], certificates: Certificate[]): Stat
     {
       label: "YEARS OF EXPERIENCE",
       value: calculateYearsOfExperience(),
-      description: "Building projects since 2021",
+      description: "Building real projects since 2025",
     },
   ];
 }
