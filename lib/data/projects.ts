@@ -1,5 +1,18 @@
 export const projects = [
   {
+    title: "Social Media App",
+    description:
+      "A social media platform supporting user authentication, including guest access, as well as post creation, commenting, and the ability to express appreciation for content. Additional components are presented as static UI previews, prepared for future feature development.",
+    tech: ["React", "Next.js", "TypeScript", "Redux", "Firebase", "Tailwind CSS"],
+    github: "https://github.com/jayelcee/social-media-app",
+    demo: "https://social-media-app-jasminec.vercel.app/",
+    status: "Deployed",
+    year: "Jan 2026",
+    category: "Full-Stack Web Application",
+    featured: true,
+    stats: { auth: "Guest login", features: "Posts, comments, likes" },
+  },
+  {
     title: "Point of Sale System",
     description:
       "Full-stack POS system with role-based authentication, checkout terminal supporting multiple payment methods, inventory management with alerts, and dual analytics dashboards for platform and company-level insights. Features transaction history, receipt viewing, and dark mode support.",

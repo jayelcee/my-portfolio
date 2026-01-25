@@ -14,6 +14,7 @@ export const techStackCategories = [
     skills: [
       { name: "JavaScript", icon: "/javascript-icon.png" },
       { name: "TypeScript", icon: "/typescript-icon.png" },
+      { name: "Redux", icon: "/redux-icon.png" },
       { name: "Tailwind CSS", icon: "/tailwind-icon.png" },
       { name: "HTML5", icon: "/html5-icon.png" },
     ]
@@ -25,7 +26,8 @@ export const techStackCategories = [
       { name: "Python", icon: "/python-icon.png" },
       { name: "MongoDB", icon: "/mongodb-icon.png" },
       { name: "PostgreSQL", icon: "/postgresql-icon.png" },
-      { name: "SQLite", icon: "/sqlite-icon.png" },
+      { name: "Supabase", icon: "/supabase-icon.png" },
+      { name: "Firebase", icon: "/firebase-icon.png" },
     ]
   },
   {
