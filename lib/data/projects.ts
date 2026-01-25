@@ -17,8 +17,8 @@ export const projects = [
     description:
       "Time tracking platform for interns with clock-in/out, multi-tier overtime management, edit log requests, and completion workflow that auto-generates DTR and certificates. Includes separate dashboards for interns and admins with PostgreSQL database.",
     tech: ["React", "Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS", "v0"],
-    github: "https://github.com/kaizentech25/intern-dtr",
-    demo: "https://kaizentech-intern-dtr-system.onrender.com/",
+    github: "https://github.com/jayelcee/InternHQ",
+    demo: "https://intern-hq.vercel.app/",
     status: "Deployed",
     year: "Jul 2025",
     category: "Full-Stack Web Application",
