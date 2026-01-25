@@ -10,7 +10,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Jasmine Camasura | Frontend & Full Stack Developer",
+  title: "Jasmine Camasura | Frontend Web Developer",
   description:
     "Computer Science graduate (Summa Cum Laude, Class Valedictorian) specializing in React, Next.js, and MERN stack development. Seeking remote frontend or full-stack developer roles. Strong fundamentals, proven adaptability, and hands-on experience with Ruby on Rails.",
   generator: "v0.app",
