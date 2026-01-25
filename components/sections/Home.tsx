@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import { Github, Linkedin, Mail, ExternalLink, Sparkles } from "lucide-react";
+import { Github, Linkedin, Mail, ExternalLink, Sparkles, Briefcase } from "lucide-react";
 import { personalInfo } from "@/lib/data/personal";
 import { motion } from "framer-motion";
 import { badgeVariants, buttonVariants, staggerContainerVariants, staggerItemVariants } from "@/lib/animations/variants";
@@ -86,7 +86,7 @@ export default function Home({ onSectionClick }: HomeProps) {
                 >
                   <motion.button variants={buttonVariants} whileHover="hover" whileTap="tap">
                     <span className="text-sm font-medium">View My Work</span>
-                    <ExternalLink className="w-5 h-5" />
+                    <Briefcase className="w-5 h-5" />
                   </motion.button>
                 </Button>
               </motion.div>
@@ -94,14 +94,18 @@ export default function Home({ onSectionClick }: HomeProps) {
                 <Button
                   variant="primary"
                   size="lg"
-                  onClick={() => onSectionClick("contact")}
                   className="flex items-center gap-2 instagram-gradient-hover"
                   asChild
                 >
-                  <motion.button variants={buttonVariants} whileHover="hover" whileTap="tap">
-                    <span className="text-sm font-medium">Contact Me</span>
-                    <Mail className="w-5 h-5" />
-                  </motion.button>
+                  <a
+                    href="https://rxresu.me/jasminec.dev/frontend-developer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2"
+                  >
+                    <span className="text-sm font-medium">My Resume</span>
+                    <ExternalLink className="w-5 h-5" />
+                  </a>
                 </Button>
               </motion.div>
             </motion.div>
