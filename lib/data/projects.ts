@@ -18,7 +18,7 @@ export const projects = [
       "Full-stack POS system with role-based authentication, checkout terminal supporting multiple payment methods, inventory management with alerts, and dual analytics dashboards for platform and company-level insights. Features transaction history, receipt viewing, and dark mode support.",
     tech: ["React", "Node.js", "Express", "MongoDB", "JavaScript", "Tailwind CSS"],
     github: "https://github.com/kaizentech25/pos-system",
-    demo: "https://kaizentech-pos-system.onrender.com",
+    demo: "https://kaizentech-pos-system.vercel.app",
     status: "Deployed",
     year: "Dec 2025",
     category: "Full-Stack Web Application",
