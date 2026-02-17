@@ -103,7 +103,7 @@ export default function Home({ onSectionClick }: HomeProps) {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"
                   >
-                    <span className="text-sm font-medium">My Resume</span>
+                    <span className="text-sm font-medium">My CV</span>
                     <ExternalLink className="w-5 h-5" />
                   </a>
                 </Button>
