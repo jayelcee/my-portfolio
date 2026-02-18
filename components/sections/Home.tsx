@@ -98,7 +98,7 @@ export default function Home({ onSectionClick }: HomeProps) {
                   asChild
                 >
                   <a
-                    href="https://rxresu.me/jasminec.dev/frontend-developer"
+                    href="https://rxresu.me/jasminec.dev/arcanys-frontend-developer"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"
